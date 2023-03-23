@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Javascript quiz</title>
-    <link src ="02-Challenge\Assets\style.css"></link>
+    <link rel="stylesheet" href="Assets/style.css" />
 </head>
 <body>
-<h1 class ="top">this is a java quiz</h1>
+    <div class="timer" id="timer">Time Left: 60</div>
+    <div class="score" id="score">score</div>
+    <div class="initials" id="initials"></div>
+    <div class="start">
+<h1 class ="top" id="hide">this is a java quiz</h1>
+<p>This is a quick Javascript quiz that is timed! Answer the questions in the set amount of time </p>
 
-    <script src ="02-Challenge\Assets\scripts.js"></script>
+<div class="gamebox">
+    <div id="questions" class="hide">
+        <div id="question">question</div>
+        <div id="answer-btns" class="button-layout">
+            <button class="btn">Answer</button>
+            <button class="btn">Answer</button>
+            <button class="btn">Answer</button>
+            <button class="btn">Answer</button>
+        </div>
+    </div>  
+    <div class="controls"></div>
+    <button id="start-btn" class="start-btn btn">start</button>
+</div>
+    <script src ="Assets\scripts.js"></script>
 </body>
 </html>
